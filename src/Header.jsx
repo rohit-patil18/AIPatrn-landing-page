@@ -14,7 +14,7 @@ const navLinks = [
 
 function Header() {
   return (
-    <header className="px-12 py-10 flex">
+    <header className="px-12 pt-8 flex">
       <h1 className="font-bold flex-1">AIPatrn</h1>
       <nav className="flex flex-1">
         <ul className="flex flex-2 flex-wrap w-400 justify-around">
