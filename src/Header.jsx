@@ -17,9 +17,9 @@ function Header() {
     <header className="px-12 py-10 flex">
       <h1 className="font-bold flex-1">AIPatrn</h1>
       <nav className="flex flex-1">
-        <ul className="flex flex-2 flex-wrap w-400 place-content-start">
+        <ul className="flex flex-2 flex-wrap w-400 justify-around">
           {navLinks.map((navLink) => (
-            <li key={navLink} className="text-gray-500 ml-20">
+            <li key={navLink} className="text-gray-500 w-40">
               {navLink}
             </li>
           ))}
