@@ -5,7 +5,7 @@ function CallToAction() {
     <section className="px-12 py-0 md:py-8">
       <p className="text-lg text-gray-500 md:mb-0 mb-2">Revolutionize Your</p>
       <div className="relative">
-        <h2 className="md:w-1/2 md:text-6xl text-3xl leading-tight">
+        <h2 className="md:w-1/2 md:text-6xl text-3xl md:leading-tight leading-tight">
           Creative Projects with the Ultimate Al-Powered Pattern
         </h2>
         <div className="flex md:flex-row flex-col justify-center items-center gap-4 md:gap-10 md:absolute bottom-0.5 left-52 md:px-5 px-0 md:pt-0 pt-5">
