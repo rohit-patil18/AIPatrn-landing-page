@@ -1,3 +1,10 @@
+import Header from "./Header";
+
 export default function App() {
-  return <h1 className="text-3xl underline font-poppins">Hello world!</h1>;
+  return (
+    <body className="h-screen flex flex-col">
+      <Header className="flex-1" />
+      <main className="h-full">hello</main>
+    </body>
+  );
 }

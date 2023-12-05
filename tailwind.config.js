@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         "poppins": ["Poppins", "sans-serific"],
+      },
+      width: {
+        "400": "400px",
       }
     },
   },
