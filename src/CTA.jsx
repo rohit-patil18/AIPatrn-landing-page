@@ -1,5 +1,7 @@
 // import React from "react";
 
+import { Link } from "react-router-dom";
+
 function CallToAction() {
   return (
     <section className="px-12 py-8">
@@ -9,9 +11,11 @@ function CallToAction() {
           Creative Projects with the Ultimate Al-Powered Pattern
         </h2>
         <div className="flex items-center gap-10 absolute bottom-0.5 left-52 px-5">
-          <button className="bg-black text-gray-50 rounded-full px-8 py-3 text-sm">
-            START GENERATING
-          </button>
+          <Link to="start-generating">
+            <button className="bg-black text-gray-50 rounded-full px-8 py-3 text-sm">
+              START GENERATING
+            </button>
+          </Link>
           <h3 className="text-xl text-gray-500 w-64">
             The Next generation <span className="text-black">Production</span>{" "}
             for Designers

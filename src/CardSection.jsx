@@ -10,6 +10,15 @@ import redirect from "./assets/icons/arrow_down_right_icon.svg";
 import bird from "./assets/icons/bird.svg";
 import Avatar from "./Avatar";
 import GoToLink from "./GoToLink";
+import { Link } from "react-router-dom";
+import { kebabCase } from "lodash";
+
+const goToLinks = [
+  "Free Edit",
+  "Interactive",
+  "Easy interface",
+  "Compare to other",
+];
 
 function CardSection() {
   return (
@@ -23,19 +32,22 @@ function CardSection() {
           </div>
           <div className="flex flex-col gap-4">
             <h4 className="text-2xl">Learn from best mentors</h4>
-            <button className="flex py-2 px-3 border border-gray-50 rounded-full text-sm items-center w-fit">
-              <p className="text-white">START LEARNING</p>
-              <img src={redirect} alt="start learning" />
-            </button>
+            <Link to="start-learning">
+              <button className="flex py-2 px-3 border border-gray-50 rounded-full text-sm items-center w-fit">
+                <p className="text-white">START LEARNING</p>
+                <img src={redirect} alt="start learning" />
+              </button>
+            </Link>
           </div>
         </section>
       </Card>
       <Card className="flex-1" number="02" bgImage={bgCard2}>
         <div>
-          <GoToLink text="Free Edit" />
-          <GoToLink text="Interactive" />
-          <GoToLink text="Easy interface" />
-          <GoToLink text="Compare to other" />
+          {goToLinks.map((goToLink) => (
+            <Link key={goToLink} to={`${kebabCase(goToLink)}`}>
+              <GoToLink text={goToLink} />
+            </Link>
+          ))}
         </div>
       </Card>
       <Card className="flex-2" number="03" bgImage={bgCard3}>
