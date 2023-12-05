@@ -1,4 +1,3 @@
-// import React from "react";
 import { PropTypes } from "prop-types";
 import redirect from "./assets/icons/arrow_down_right_icon.svg";
 

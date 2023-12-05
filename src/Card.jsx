@@ -1,4 +1,3 @@
-// import React from "react";
 import { PropTypes } from "prop-types";
 
 function Card({ number = "01", children = "", className = "", bgImage = "" }) {

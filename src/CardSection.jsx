@@ -1,4 +1,3 @@
-// import React from "react";
 import Card from "./Card";
 import bgCard1 from "./assets/images/card-1.jpg";
 import bgCard2 from "./assets/images/card-2.jpg";
