@@ -56,7 +56,7 @@ function CardSection() {
           <p className="text-2xl md:px-10 px-2">
             Glass Pattern generated this week in the first release.
           </p>
-          <div className="md:visible hidden">
+          <div className="md:block hidden">
             <img src={bird} alt="icon" className="w-5" />
             <img src={bird} alt="icon" className="w-5" />
           </div>
