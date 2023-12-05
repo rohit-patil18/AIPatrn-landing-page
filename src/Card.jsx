@@ -11,7 +11,7 @@ function Card({ number = "01", children = "", className = "", bgImage = "" }) {
         backgroundSize: "cover",
       }}
     >
-      <span className="border border-gray-50 text-gray-50 py-1 px-3 rounded-full w-fit">{number}</span>
+      <span className="border border-gray-50 text-gray-50 py-1 px-3 rounded-full w-fit md:mb-0 mb-5">{number}</span>
       {children}
     </div>
   );

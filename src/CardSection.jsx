@@ -22,7 +22,7 @@ const goToLinks = [
 
 function CardSection() {
   return (
-    <section className="flex gap-2 text-gray-50">
+    <section className="flex md:flex-row flex-col gap-2 text-gray-50">
       <Card className="flex-1" number="01" bgImage={bgCard1}>
         <section>
           <div className="flex relative mb-12">
@@ -51,12 +51,12 @@ function CardSection() {
         </div>
       </Card>
       <Card className="flex-2" number="03" bgImage={bgCard3}>
-        <div className="flex px-8 items-center">
+        <div className="flex md:flex-row flex-col gap-4 md:gap-0 px-8 items-center">
           <h4 className="text-7xl">+20K</h4>
-          <p className="text-2xl px-10">
+          <p className="text-2xl md:px-10 px-2">
             Glass Pattern generated this week in the first release.
           </p>
-          <div>
+          <div className="md:visible hidden">
             <img src={bird} alt="icon" className="w-5" />
             <img src={bird} alt="icon" className="w-5" />
           </div>
